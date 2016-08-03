@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Astro Calculator</title>
+    	<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+    	<div id="myheader">
+    		<h1>Astro Calculator</h1>
+    		<h2>Find out how much you would weigh on other planets.</h2>
+      	</div>
+   		<div class="container">
+    		<div id="number1" class="thediv">
+				<label for="yourWeight">How much do you weigh on Earth?</label><br><br>
+				<input type="Text" id="yourWeight">
+      		</div>
+   			<div id="number2" class="thediv">
+				<label for="planetList"><br><br>Select a surface:</label><br><br>
+				<select id ="planetList">
+					<optgroup label="Planets">
+						<option id="mercury" value="0.377">Mercury</option>
+						<option id="venus" value="0.9032">Venus</option>
+						<option id="earth" value="1">Earth</option>
+						<option id="mars" value="0.3895">Mars</option>
+						<option id="jupiter" value="2.640">Jupiter</option>
+						<option id="saturn" value="1.139">Saturn</option>
+						<option id="uranus" value="0.917">Uranus</option>
+						<option id="neptune" value="1.148">Neptune</option>
+						<option id="pluto" value="0.06">Pluto</option>
+					</optgroup>
+					<optgroup label="Other">				
+						<option id="sun" value="27.9">the Sun</option>
+						<option id="earth_moon" value="0.1655">Earth's moon</option>
+					</optgroup>
+				</select>
+        		<br><br><button onclick="gettingTheText()" type="button" id="theButton" value="Submit">Calculate</button>
+    		</div>
+     
+    		<div id="para"><p id="printToThePage"></p></div>
+    	</div>
+    	<script src="index.js"></script>
+	</body>
+</html>
